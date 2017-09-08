@@ -1,7 +1,7 @@
 import urllib.request
 import urllib.parse
-import sys
-import ssl
+#import sys
+#import ssl
 import bs4
 import pandas as pd
 
@@ -52,9 +52,9 @@ start = 'WAC17205'
 change = 50000
 i=0
 
-while i <= 1400:
+while i <= 1500:
     main(start+str(change))
     change=change+1
     i=i+1
  
-df.to_csv('out.csv')
+df.to_csv('out.csv') 
